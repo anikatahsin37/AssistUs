@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "601915360134",
+    "firebase_url": "https://anika-4416e.firebaseio.com",
+    "project_id": "anika-4416e",
+    "storage_bucket": "anika-4416e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601915360134:android:5d4d9bac8096e00d",
+        "android_client_info": {
+          "package_name": "com.example.fairuz.location_reminder_test2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601915360134-e2mim5nd1j8tn9djjm0de5o6j6nj9mva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDJFuqFnE_yihNYRA5XhFJFWO4qV9vEIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

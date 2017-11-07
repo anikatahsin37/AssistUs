@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tunemainback"
+    android:background="@color/backgroundColor">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone1"
+            android:textColor="#ffffff"
+            android:id="@+id/rt1"
+            android:textSize="20dp"
+            android:paddingLeft="13dp"
+            android:checked="true"
+           />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="53dp"
+            android:text="Ringtone2"
+            android:textSize="20dp"
+            android:id="@+id/rt2"
+            android:paddingLeft="13dp"
+   />
+
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:layout_height="53dp"
+                android:text="Ringtone3"
+                android:textSize="20dp"
+                android:id="@+id/rt3"
+                android:paddingLeft="13dp"
+      />
+
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:layout_height="53dp"
+                android:text="Ringtone4"
+                android:textSize="20dp"
+                android:id="@+id/rt4"
+                android:paddingLeft="13dp"
+              />
+
+
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:layout_height="53dp"
+                android:text="Ringtone5"
+                android:textSize="20dp"
+                android:id="@+id/rt5"
+                android:paddingLeft="13dp"
+    />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone6"
+            android:textColor="#ffffff"
+            android:id="@+id/rt6"
+            android:textSize="20dp"
+            android:paddingLeft="13dp"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone7"
+            android:textColor="#ffffff"
+            android:id="@+id/rt7"
+            android:textSize="20dp"
+            android:paddingLeft="13dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone8"
+            android:textColor="#ffffff"
+            android:id="@+id/rt8"
+            android:textSize="20dp"
+            android:paddingLeft="13dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone9"
+            android:textColor="#ffffff"
+            android:id="@+id/rt9"
+            android:textSize="20dp"
+            android:paddingLeft="13dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Ringtone10"
+            android:textColor="#ffffff"
+            android:id="@+id/rt10"
+            android:textSize="20dp"
+
+            android:paddingLeft="13dp"
+            />
+
+
+
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

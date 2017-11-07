@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayoutsilent"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Title"
+        android:textColor="@color/lightAsh"
+        android:textSize="18dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:id="@+id/addTitle"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/addTitle"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/title"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="5dp"
+            android:background="@drawable/textinputborder"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:id="@+id/addTime"
+            android:textStyle="bold"
+            android:text="Add Time"
+            android:textColor="@color/lightAsh"
+            android:textSize="18dp"
+            android:paddingTop="5dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseTimeFrom"
+            android:text="From"
+            android:background="@drawable/rectangular_button"
+            android:textColor="@color/lightAsh"
+            android:textSize="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/addTime"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeFrom"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_marginLeft="165dp"
+            android:layout_alignBottom="@+id/chooseTimeFrom"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseTimeTo"
+            android:text="To"
+
+            android:textColor="@color/lightAsh"
+            android:background="@drawable/rectangular_button"
+            android:textSize="16dp"
+            android:layout_below="@+id/chooseTimeFrom"
+            android:layout_alignEnd="@+id/chooseTimeFrom"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTo"
+            android:layout_marginLeft="165dp"
+            android:layout_above="@+id/repeat"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorAccent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/repeat"
+            android:background="@color/colorAccent"/>
+        <TextView
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat Option"
+            android:textColor="@color/lightAsh"
+            android:id="@+id/repeat"
+            android:layout_below="@+id/chooseTimeTo"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/repeat"
+            android:textColor="@color/lightAsh"
+            android:id="@+id/none"
+            android:onClick="selectDays"
+            android:checked="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/none">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:onClick="selectDays"
+                android:id="@+id/sun"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="selectDays"
+                android:text="Mon"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/mon"
+                android:layout_toRightOf="@+id/sun"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="selectDays"
+                android:text="Tue"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/tue"
+                android:layout_toRightOf="@+id/mon"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:onClick="selectDays"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/wed"
+                android:layout_toRightOf="@+id/tue"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:textSize="16dp"
+                android:onClick="selectDays"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/thu"
+                android:layout_below="@+id/sun"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:layout_marginLeft="10dp"
+                android:onClick="selectDays"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/fri"
+                android:layout_toRightOf="@+id/thu"
+                android:layout_below="@+id/sun"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selectDays"
+                android:text="Sat"
+                android:layout_marginLeft="23dp"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:id="@+id/sat"
+                android:layout_toRightOf="@+id/fri"
+                android:layout_below="@+id/sun"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="All"
+                android:textSize="16dp"
+                android:textColor="@color/lightAsh"
+                android:onClick="selectDays"
+                android:id="@+id/all"
+                android:layout_toRightOf="@+id/sat"
+                android:layout_below="@+id/sun"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/save"
+            android:text="Save"
+            android:textSize="16dp"
+            android:textColor="@color/lightAsh"
+            android:background="@drawable/rectangular_button"
+
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

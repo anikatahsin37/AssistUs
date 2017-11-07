@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Title"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:id="@+id/addTitle"
+        android:textColor="@color/lightAsh"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/addTitle"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/title"
+            android:background="@drawable/textinputborder"
+            android:textColor="@color/colorAccent"
+            android:textSize="17dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/chooseDate"
+            android:text="Choose Date"
+            android:textSize="13dp"
+            android:background="@drawable/button_corner"
+            android:textColor="@color/lightAsh"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="17dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignBaseline="@+id/chooseDate"
+            android:layout_alignBottom="@+id/chooseDate" />
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/chooseTime"
+            android:text="Choose Time"
+
+            android:textSize="13dp"
+            android:background="@drawable/button_corner"
+            android:textColor="@color/lightAsh"
+            android:layout_below="@+id/chooseDate"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:textSize="17dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/colorAccent"
+            android:layout_above="@+id/addDescription"
+           />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/save"
+            android:text="Save"
+            android:textSize="13dp"
+            android:background="@drawable/rectangular_button"
+            android:textColor="@color/lightAsh"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addDescription"
+            android:text="Add Desciption"
+            android:textSize="17dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/lightAsh"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/chooseTime"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/description"
+            android:background="@drawable/textinputborder"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/addDescription" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangular_button"
+            android:text="Choose Alarm tone"
+            android:textSize="13dp"
+            android:textColor="@color/lightAsh"
+            android:id="@+id/chooseTune"
+            android:layout_below="@+id/description"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/textinputborder"
+            android:layout_marginLeft="165dp"
+            android:id="@+id/tune"
+
+            android:paddingTop="8dp"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignTop="@+id/chooseTune"
+          />
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangular_button"
+            android:text="Alarm before"
+            android:textSize="13dp"
+            android:textColor="@color/lightAsh"
+            android:id="@+id/chooseAlarmTime"
+            android:layout_below="@+id/chooseTune"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:paddingLeft="10dp"
+            android:background="@drawable/textinputborder"
+            android:layout_marginLeft="165dp"
+            android:id="@+id/alarmbefore"
+
+            android:paddingTop="8dp"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignBaseline="@+id/chooseAlarmTime"
+            android:layout_alignBottom="@+id/chooseAlarmTime"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

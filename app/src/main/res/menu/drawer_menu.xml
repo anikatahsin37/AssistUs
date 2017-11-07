@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<group
+    android:id="@+id/group1">
+        <item
+            android:id="@+id/task"
+            android:title="Task Management"
+            android:icon="@drawable/task"
+            />
+
+
+
+
+
+        <item
+            android:id="@+id/Ssilent"
+            android:title="Scheduled Silent"
+            android:icon="@drawable/silent"
+            />
+
+
+
+        <item
+            android:id="@+id/location"
+            android:title="Location Reminder"
+            android:icon="@drawable/location"/>
+
+</group>
+
+        <item
+            android:id="@+id/setting"
+            android:title="Theme"
+            android:icon="@drawable/theme"
+        />
+
+
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/logout"/>
+
+
+
+</menu>

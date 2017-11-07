@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transitionContainer"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_marginTop="00dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Task Management"
+        android:background="@drawable/rectangular_button"
+        android:textColor="@color/white"
+        android:id="@+id/taskManagement"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/taskManagement"
+        android:text="Scheduled Silent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangular_button"
+        android:textColor="@color/white"
+        android:id="@+id/Silent"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/Silent"
+        android:text="Location Reminder"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangular_button"
+        android:textColor="@color/white"
+        android:id="@+id/Location"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/Location"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Logout"
+            />
+
+
+
+</RelativeLayout>

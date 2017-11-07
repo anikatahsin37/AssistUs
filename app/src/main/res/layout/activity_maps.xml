@@ -1,0 +1,131 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#384248"
+    >
+
+
+
+    <!-- <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#E4E7E9"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/B_search"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#263237"
+        android:layout_toEndOf="@+id/TF_location"
+        android:onClick="onClick"
+        android:text="Search" /> -->
+
+
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/B_add"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+    <ImageButton
+        android:id="@+id/B_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_add"
+        android:layout_below="@+id/place_autocomplete_fragment"
+        />
+
+    <ImageButton
+        android:id="@+id/B_add_task"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#384248"
+        />
+
+
+    <!--<Button
+        android:id="@+id/B_search"
+        android:text=""
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#FFFFFF"
+        android:onClick="onClick"-->
+
+
+    />
+
+
+
+
+
+
+
+    <!--<ImageView
+        android:id="@+id/B_add"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TF_location"
+        android:layout_toEndOf="@+id/B_restaurants"
+        android:onClick="onClick"
+        android:src="@drawable/ic_add" />-->
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

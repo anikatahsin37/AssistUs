@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iconmainlayout"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RG">
+
+
+
+            <RadioButton
+                android:id="@+id/calender"
+                android:drawableRight="@drawable/calender"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+
+
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/gift"
+            android:drawableRight="@drawable/gift"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ />
+
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/call"
+            android:drawableRight="@drawable/call"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ />
+
+
+        <RadioButton
+            android:id="@+id/shopping"
+            android:drawableRight="@drawable/shopping"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ />
+
+
+
+
+        <RadioButton
+            android:id="@+id/medical"
+            android:drawableRight="@drawable/medical"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/travel"
+            android:drawableRight="@drawable/travel"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+  />
+
+
+
+        <RadioButton
+            android:id="@+id/cake"
+            android:drawableRight="@drawable/cake"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_light"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

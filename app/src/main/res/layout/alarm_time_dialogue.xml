@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pretime_main_back"
+    android:background="@color/backgroundColor">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/lightAsh"
+        android:id="@+id/amount"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:textColor="@color/lightAsh"
+            android:paddingLeft="13dp"
+            android:text="Minutes before"
+            android:textSize="17dp" />
+
+        <RadioButton
+            android:id="@+id/rt2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/lightAsh"
+            android:paddingLeft="13dp"
+            android:text="Hours before"
+            android:textSize="17dp"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/rt3"
+            android:textColor="@color/lightAsh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="13dp"
+            android:text="Days before"
+            android:textSize="17dp" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="13dp"
+            android:background="@drawable/rectangular_button"
+            android:text="Done"
+            android:id="@+id/done"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#ffffff"
+
+            />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>
